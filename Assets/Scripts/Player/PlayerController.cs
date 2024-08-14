@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
         transform.Translate( new Vector3(horizontalInput, 0, forwardInput) * Time.deltaTime * speed);
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput) + Mathf.Abs(forwardInput));
+        animator.SetFloat("MovX", horizontalInput);
+        animator.SetFloat("MovY", forwardInput);
     }
 
 }
