@@ -53,7 +53,7 @@ public class PoolSpawner : MonoBehaviour
 
     // Método que instancia um novo objeto usando Naughty Attributes, tornando possível
     // chamar o método pelo inspetor do Unity
-    [Button ("SpawnNPC")]
+    [Button ("Spawnar NPC")]
     public void SpawnNPC()
     {
         SpawnFromPool("npc1", transform.position, Quaternion.identity);
@@ -61,7 +61,7 @@ public class PoolSpawner : MonoBehaviour
 
     // Método que retorna o objeto para a fila usando Naughty Attributes, tornando possível
     // chamar o método pelo inspetor do Unity
-    [Button("ReturnNPC")]
+    [Button("Returnar NPC")]
     public void ReturnNPC()
     {
         // Pega o NPC
